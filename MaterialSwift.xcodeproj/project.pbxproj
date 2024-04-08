@@ -11,6 +11,11 @@
 		919584932BC269870071D7A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919584922BC269870071D7A2 /* ContentView.swift */; };
 		919584952BC269890071D7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919584942BC269890071D7A2 /* Assets.xcassets */; };
 		919584982BC269890071D7A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919584972BC269890071D7A2 /* Preview Assets.xcassets */; };
+		91F638AD2BC26F150001D267 /* PlainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F638AC2BC26F150001D267 /* PlainButton.swift */; };
+		91F638B12BC2712C0001D267 /* UIScreenExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 91F638B02BC2712C0001D267 /* UIScreenExtension */; };
+		91F638B42BC2713E0001D267 /* ScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F638B32BC2713E0001D267 /* ScreenUtils.swift */; };
+		91F638B82BC2C7EC0001D267 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F638B72BC2C7EC0001D267 /* IconButton.swift */; };
+		91F638BA2BC2D6C90001D267 /* SegmentedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F638B92BC2D6C90001D267 /* SegmentedButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		919584922BC269870071D7A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		919584942BC269890071D7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		919584972BC269890071D7A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91F638AC2BC26F150001D267 /* PlainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainButton.swift; sourceTree = "<group>"; };
+		91F638B32BC2713E0001D267 /* ScreenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtils.swift; sourceTree = "<group>"; };
+		91F638B72BC2C7EC0001D267 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		91F638B92BC2D6C90001D267 /* SegmentedButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F638B12BC2712C0001D267 /* UIScreenExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +61,8 @@
 		9195848F2BC269870071D7A2 /* MaterialSwift */ = {
 			isa = PBXGroup;
 			children = (
+				91F638B22BC271330001D267 /* Utils */,
+				91F638AE2BC26F1B0001D267 /* Components */,
 				919584902BC269870071D7A2 /* MaterialSwiftApp.swift */,
 				919584922BC269870071D7A2 /* ContentView.swift */,
 				919584942BC269890071D7A2 /* Assets.xcassets */,
@@ -65,6 +77,24 @@
 				919584972BC269890071D7A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		91F638AE2BC26F1B0001D267 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				91F638AC2BC26F150001D267 /* PlainButton.swift */,
+				91F638B72BC2C7EC0001D267 /* IconButton.swift */,
+				91F638B92BC2D6C90001D267 /* SegmentedButtons.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		91F638B22BC271330001D267 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				91F638B32BC2713E0001D267 /* ScreenUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = MaterialSwift;
+			packageProductDependencies = (
+				91F638B02BC2712C0001D267 /* UIScreenExtension */,
+			);
 			productName = MaterialSwift;
 			productReference = 9195848D2BC269870071D7A2 /* MaterialSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 919584842BC269870071D7A2;
+			packageReferences = (
+				91F638AF2BC2712C0001D267 /* XCRemoteSwiftPackageReference "UIScreenExtension" */,
+			);
 			productRefGroup = 9195848E2BC269870071D7A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				919584932BC269870071D7A2 /* ContentView.swift in Sources */,
+				91F638B42BC2713E0001D267 /* ScreenUtils.swift in Sources */,
+				91F638AD2BC26F150001D267 /* PlainButton.swift in Sources */,
+				91F638B82BC2C7EC0001D267 /* IconButton.swift in Sources */,
+				91F638BA2BC2D6C90001D267 /* SegmentedButtons.swift in Sources */,
 				919584912BC269870071D7A2 /* MaterialSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +348,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91F638AF2BC2712C0001D267 /* XCRemoteSwiftPackageReference "UIScreenExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marchv/UIScreenExtension";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91F638B02BC2712C0001D267 /* UIScreenExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F638AF2BC2712C0001D267 /* XCRemoteSwiftPackageReference "UIScreenExtension" */;
+			productName = UIScreenExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 919584852BC269870071D7A2 /* Project object */;
 }

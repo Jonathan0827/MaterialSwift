@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIScreenExtension
+import UIKit
+
+func ppi() -> CGFloat {
+    if let pointsPerCentimeter = UIScreen.pointsPerCentimeter {
+       return pointsPerCentimeter
+    } else {
+        return 0
+    }
+}

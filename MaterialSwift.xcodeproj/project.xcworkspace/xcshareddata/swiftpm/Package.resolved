@@ -1,0 +1,15 @@
+{
+  "originHash" : "0d787b25c25f8cc7d6758ab79f7b8ce7bd1e26fca6eac7ecd0c52d05fab31d0e",
+  "pins" : [
+    {
+      "identity" : "uiscreenextension",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marchv/UIScreenExtension",
+      "state" : {
+        "revision" : "b3bc0fbeb2b0d3a6fb74d1161e1ce9d99f3c070e",
+        "version" : "0.0.11"
+      }
+    }
+  ],
+  "version" : 3
+}
